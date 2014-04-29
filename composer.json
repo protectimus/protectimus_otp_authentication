@@ -11,7 +11,9 @@
         "auth",
         "authentication",
         "OATH",
-        "token"
+        "token",
+        "2-step verification",
+        "login"
     ],
     "homepage": "http://protectimus.com",
     "license": "GPL-3.0+",
