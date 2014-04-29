@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><roundcube:object name="plugin.pagetitle" /></title>
+<meta name="Robots" content="noindex,nofollow" />
+<link rel="shortcut icon" href="skins/classic/images/favicon.ico" />
+</head>
+<body>
+	<style type="text/css">
+#tb_label_popup {
+	display: none !important;
+}
+</style>
+	<div class="navbar navbar-top navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="brand" href="http://www.protectimus.com/" target="_blank"></a>
+				<ul class="nav pull-right ul-head">
+					<li><a class="button-logout" id="rcmbtn100"
+						href="./?_task=logout"
+						onclick="return rcmail.command('switch-task','logout',this,event)"><i
+							class="icon-off"></i> <roundcube:label name="logout" /> </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="span4 offset4">
+			<div class="padded">
+				<div style="min-height: 65px; overflow: visible; padding-top: 20px;">
+					<div id="alerts">
+						<roundcube:object name="plugin.message" id="message" />
+					</div>
+				</div>
+				<div style="margin-top: 35px;" class="login box">
+					<div class="box-header">
+						<span class="title"><roundcube:label
+								name="protectimus_otp_authentication.enter_otp_from_your_token" />
+						</span>
+					</div>
+					<div class="box-content padded">
+						<form id="protectimus_otp_form" method="post"
+							class="separate-sections"
+							action="./?_action=plugin.protectimus_otp_authentication_action">
+							<roundcube:object name="plugin.challenge" id="challenge" />
+							<div class="input-prepend">
+								<span class="add-on"><i class="icon-lock"></i> </span><input
+									autofocus name="otp" id="otp" type="text" maxlength="16"
+									autocomplete="off" />
+							</div>
+							<div>
+								<a onclick="$('#protectimus_otp_form').submit();"
+									class="btn btn-blue btn-block"> <roundcube:label
+										name="protectimus_otp_authentication.to_log_in" /> <i
+									class="icon-signin"></i> </a>
+							</div>
+							<roundcube:object name="plugin.body" form="form" />
+						</form>
+					</div>
+				</div>
+				<roundcube:object name="plugin.selfservice" id="selfservice" />
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.t-dismiss').on('click', function() {
+				$('.t-alert-container').remove();
+			});
+			$('#otp').attr('placeholder', rcmail.gettext('protectimus_otp_authentication.otp'));
+		});
+	</script>
+</body>
+</html>
