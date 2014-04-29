@@ -1,5 +1,5 @@
-﻿{
-    "name": "protectimus/roundcube_otp_plugin",
+{
+    "name": "protectimus/roundcube-otp-plugin",
     "type": "roundcube-plugin",
     "description": "Protectimus OTP solution for Roundcube",
     "keywords": ["OTP","2FA","strong authentication","Protectimus"],
