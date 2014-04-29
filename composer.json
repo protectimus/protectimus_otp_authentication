@@ -2,7 +2,12 @@
     "name": "protectimus/roundcube-otp-plugin",
     "type": "roundcube-plugin",
     "description": "Protectimus OTP solution for Roundcube",
-    "keywords": ["OTP","2FA","strong authentication","Protectimus"],
+    "keywords": [
+        "OTP",
+        "2FA",
+        "strong authentication",
+        "Protectimus"
+    ],
     "homepage": "http://protectimus.com",
     "license": "GPL-3.0+",
     "repositories": [
