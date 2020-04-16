@@ -10,7 +10,9 @@ Installation instruction:
 1. Download the code from github
 1. Place the protectimus_otp_authentication dir into the plugins/ folder of your roundcube install
 2. Enable the protectimus_otp_authentication plugin in config/main.inc.php:
-$rcmail_config['plugins'] = array('protectimus_otp_authentication');
+
+```$rcmail_config['plugins'] = array('protectimus_otp_authentication');```
+
 4. Open and adjust plugins/protectimus_otp_authentication/config.inc.php
 You have to fill in these parameters:
 
