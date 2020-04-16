@@ -1,12 +1,11 @@
-protectimus_otp_authentication
-====================
+# protectimus_otp_authentication
 
 This is a plugin for Roundcube Webmail, that allows to integrate Protectimus two-factor authentication solution into your mailing system with no effort.
 
 Protectimus is the most convenient and affordable solution for organizing strong two-factor authentication, based on One-Time Passwords (OTP).
 Learn more about Protectimus at https://www.protectimus.com
 
-Installation instruction:
+# Installation instruction:
 1. Download the code from github
 1. Place the protectimus_otp_authentication dir into the plugins/ folder of your roundcube install
 2. Enable the protectimus_otp_authentication plugin in config/main.inc.php:
@@ -32,5 +31,6 @@ ID of the resource in Protectimus
 
 ```$rcmail_config['protectimus_resource_id']```
 
+# See also
 You can also visit official Roundcube Webmail plugin repository to know more about how to install our RoundCube plugin:
 https://packagist.org
