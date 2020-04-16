@@ -1,5 +1,5 @@
 {
-    "name": "protectimus/roundcube-otp-plugin",
+    "name": "protectimus/protectimus_otp_authentication",
     "type": "roundcube-plugin",
     "description": "Protectimus OTP solution for Roundcube",
     "keywords": [
@@ -15,12 +15,12 @@
         "2-step verification",
         "login"
     ],
-    "homepage": "http://protectimus.com",
+    "homepage": "https://protectimus.com",
     "license": "GPL-3.0+",
     "repositories": [
         {
             "type": "composer",
-            "url": "http://plugins.roundcube.net"
+            "url": "https://packagist.org"
         }
     ],
     "require": {
