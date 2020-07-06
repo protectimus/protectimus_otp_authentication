@@ -31,6 +31,12 @@ ID of the resource in Protectimus
 
 ```$rcmail_config['protectimus_resource_id']```
 
+if you use theme skin different from default you need to rename skin folder in this plugin.
+For example:
+```
+mv skins/default skins/elastic
+```
+
 # See also
 You can also visit official Roundcube Webmail plugin repository to know more about how to install our RoundCube plugin:
 https://packagist.org
