@@ -33,10 +33,8 @@ ID of the resource in Protectimus
 
 ```diff
 - IMPORTANT:
-```
 if you use theme skin different from default you need to rename skin folder in this plugin.
 For example:
-```
 cp -a skins/default skins/elastic
 ```
 
