@@ -6,30 +6,32 @@ Protectimus is the most convenient and affordable solution for organizing strong
 Learn more about Protectimus at https://www.protectimus.com
 
 # Installation instruction:
+1. Get registered with the Protectimus Cloud Service. See the detailed instructions here: https://www.protectimus.com/guides/saas-service/
+1. Add Resouce, Users, Tokens, and then Assign Tokens with Users to a Resource in the Protectimus Cloud Service. See the instructions in the [Protectimus Administrator Guide](https://www.protectimus.com/wp-content/themes/protectimus/img/pdf/EN_Protectimus_Administrator%27s_guide_SAAS_Service_On_Premise_Platform.pdf)
 1. Download the code from github
 1. Place the protectimus_otp_authentication dir into the plugins/ folder of your roundcube install
-2. Enable the protectimus_otp_authentication plugin in config/main.inc.php:
+1. Enable the protectimus_otp_authentication plugin in config/main.inc.php:
 
-```$rcmail_config['plugins'] = array('protectimus_otp_authentication');```
+```$config['plugins'] = array('protectimus_otp_authentication');```
 
 4. Open and adjust plugins/protectimus_otp_authentication/config.inc.php
 You have to fill in these parameters:
 
 This is your login name
 
-```$rcmail_config['protectimus_api_username']```
+```$config['protectimus_api_username']```
 
 You can find api key at service.protectimus.com Profile -> API Key
 
-```$rcmail_config['protectimus_api_key']```
+```$config['protectimus_api_key']```
 
 You don't need to change this, if you use our cloud service
 
-```$rcmail_config['protectimus_api_url'] = 'https://api.protectimus.com/';```
+```$config['protectimus_api_url'] = 'https://api.protectimus.com/';```
 
-ID of the resource in Protectimus
+ID of the resource in the Protectimus service
 
-```$rcmail_config['protectimus_resource_id']```
+```$config['protectimus_resource_id']```
 
 ```diff
 - IMPORTANT:
